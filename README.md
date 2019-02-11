@@ -44,4 +44,26 @@ To achieve this, your code should be T.R.U.E:
 3. Usable: The code you already wrote should be usable in new and unexpected contexts.
 4. Exemplary: Developers copy the practices and methodologies other developers already coded. Be mindful of this as you and other developers will reuse the same practices.
 
+### Why single responsibility matters
+
+> Applications that are easy to change consist of classes that are easy to reuse.
+
+When classes have more than one responsibility they become difficult to change and reuse. You should strive to maintain a single responsibility for each class and don't duplicate code. This will lead to increased bugs and aditional maintenance. 
+
+The SRP or "Single responsibility Principle" should not be taken literaly. If you do, classes will do to small/unique of a thing. Instead think of it as a class being _highly cohesive: everithing the class does be **highly related to its purpose**_.
+
+> When the future cost of doing nothing is sthe same as the current cost, postpone the decision. Make the decision only when you must with the information you have at the time.
+
+### Writing code that embraces change
+
+#### Depend on behavior, not data
+
+1. Hide instance variables
+
+> Always wrap instance variables in accessor methods instead of directly referring to variables.
+
+2. Hide data structures
+
+> 
+
 
