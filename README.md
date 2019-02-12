@@ -64,6 +64,11 @@ The SRP or "Single responsibility Principle" should not be taken literaly. If yo
 
 2. Hide data structures
 
-> 
+> If you can control the input, pass in a useful object, bu tif you are _compelled_ to take a messy structure, hide the mess **even from yourself**.
+
+3. Enforce Single Responsibility Everywhere
+
+> Methods, like classes, should have a single responsibility.
+
 
 
