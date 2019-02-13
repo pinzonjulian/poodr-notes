@@ -70,5 +70,30 @@ The SRP or "Single responsibility Principle" should not be taken literaly. If yo
 
 > Methods, like classes, should have a single responsibility.
 
+Methods with a single responsability:
+
+1. Expose previously hidden qualities
+2. Avoid the need for comments: If a bit of code inside a method nees a comment, extract that bit into a separate method.
+3. Encourage reuse. Make code exemplary since other programmers will copy your practices.
+4. Are easy to move to another class. Well separated bits of code can easily be refactored into their own classes.
+
+# Chapter 3: Managing dependencies
+
+## Understanding dependencies
+
+> An object depends on another object if, when one object changes the othe rmight be forced to change in turn.
+
+## Writing loosely coupled code
+
+### Inject dependencies
+
+In summary: Pass a wheel instance to the class gear rather than passing the arguments gear needs to be initialized. The new `weel` argument responds to diameter. This way, any thing that is `diameterable`, as in, it resopnds to `diameter` can be used in gear
+
+### Isolate dependencies
+
+> Think of every dependency as an alien bacterium that's trying to infect your class. Give your class a vigorous immune system; quarantine each dependency. Dependencies are foreign invaders that represent vulnerabilities, and the should be concise, explicit and isolated.
+
+.
+
 
 
