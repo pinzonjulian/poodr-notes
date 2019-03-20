@@ -86,15 +86,23 @@ Methods with a single responsability:
 ## Writing loosely coupled code
 
 ### Inject dependencies
-([See example code](code-examples/chapter-3.rb#L2-L34))
+([See example code](code_examples/chapter_3.rb#L3-L36))
 
 In summary: Pass a wheel instance to the class gear rather than passing the arguments gear needs to be initialized. The new `weel` argument responds to diameter. This way, any thing that is `diameterable`, as in, it resopnds to `diameter` can be used in gear
 
 ### Isolate dependencies
-
+([See example code](code_examples/chapter_3.rb#L37-L72))
 > Think of every dependency as an alien bacterium that's trying to infect your class. Give your class a vigorous immune system; quarantine each dependency. Dependencies are foreign invaders that represent vulnerabilities, and the should be concise, explicit and isolated.
 
-.
 
+### Isolate vulnerable external messages
+([See example code](code_examples/chapter_3.rb#L74-L95)
 
+### Remove argument-order dependencies
+([See example code](code_examples/chapter_3.rb#L97-L155)
+> if your defaults are more than simple nubmers or stirngs, implement a defaults method
+
+### Isolate multiparameter initialization
+([See example code](code_examples/chapter_3.rb#L159-L1580)
+When you cannot change the arguments from order-dependent to order-independent, ISOLATE!
 
