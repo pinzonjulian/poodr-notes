@@ -86,6 +86,7 @@ Methods with a single responsability:
 ## Writing loosely coupled code
 
 ### Inject dependencies
+([See example code](code-examples/chapter-3.rb#L2-L34))
 
 In summary: Pass a wheel instance to the class gear rather than passing the arguments gear needs to be initialized. The new `weel` argument responds to diameter. This way, any thing that is `diameterable`, as in, it resopnds to `diameter` can be used in gear
 
