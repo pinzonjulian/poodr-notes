@@ -96,13 +96,24 @@ In summary: Pass a wheel instance to the class gear rather than passing the argu
 
 
 ### Isolate vulnerable external messages
-([See example code](code_examples/chapter_3.rb#L74-L95)
+([See example code](code_examples/chapter_3.rb#L74-L95))
 
 ### Remove argument-order dependencies
-([See example code](code_examples/chapter_3.rb#L97-L155)
+([See example code](code_examples/chapter_3.rb#L97-L155))
 > if your defaults are more than simple nubmers or stirngs, implement a defaults method
 
 ### Isolate multiparameter initialization
-([See example code](code_examples/chapter_3.rb#L159-L1580)
+([See example code](code_examples/chapter_3.rb#L159-L178))
+
 When you cannot change the arguments from order-dependent to order-independent, ISOLATE!
 
+
+## Managing dependency direction
+
+> depend on things that change less often than you do
+
+- Some classes are more likely to change than others
+- Concrete classes are more likely to change than abstract classes (this makes me thing of rails ::Base modules)
+- Chaning a class that has many dependents will result in widespread consequences
+
+> Depending on an abstraction is always better than depending on a concretion
